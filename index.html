@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Third-Party APIs Activity</title>
+	<!-- META TAGS FOR SEO -->
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.13.0.custom/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.13.0.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.13.0.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Movie Info!</h1>
+		<p>Learn more about your favorite movies on our site.</p>
+		<nav>
+			<h2 class="sr-only">Main Navigation</h2>
+			<ul>
+				<li><a href="#autoLoad">Popular</a></li>
+				<li><a href="#searchLoad">Search by Year</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article id="autoLoad">
+			<h2>Current Popular Movies</h2>
+			<section id="popular"></section>
+		</article>
+		<article id="searchLoad">
+			<h2>Popular the Year You Were Born</h2>
+			<form>
+				<label for="userYear">Enter Your Birth Year: </label>
+				<input type="number" name="userYear" id="userYear" min="1940" max="2021" readonly>
+				<button id="yearBtn">Submit</button>
+			</form>
+			<section id="birthYear"></section>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021</p>
+		<p>This site is for educational purposes only</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jQuery.js"></script>
+</body>
+</html>
